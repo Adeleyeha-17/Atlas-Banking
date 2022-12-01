@@ -231,6 +231,9 @@ btnClose.addEventListener('click', function (e) {
   }
 
   inputCloseUsername.value = inputClosePin.value = '';
+  labelWelcome.textContent = `We're Sorry to see you leave, ${
+      currentAccount.owner.split(' ')[0]
+    }`;
 });
 
 let sorted = false;
